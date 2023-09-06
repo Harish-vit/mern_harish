@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .Vertical ul {  
+            list-style-type: none;  
+            margin: 0;  
+            padding: 10px;  
+            border :1px solid;
+            border-color: black;
+            width: 200px;  
+            background-color: white;  
+        }            
+        .Vertical li a {  
+            display: block;  
+            color: blue;  
+            background-color: lightblue;
+            font-size:20px;  
+            padding: 8px 16px;  
+            text-decoration: none;  
+        }  
+        .Vertical .active{  
+            background-color: orange;  
+            color: white;  
+        }  
+        .Vertical li a:hover {  
+            background-color: orange;  
+            color: white;  
+        }  
+        .Horizontal ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .Horizontal li{
+            float:left;
+        }
+        .Horizontal li a{
+            display: block;
+            color: blue;
+            border-right: 1px solid;
+            background-color: lightgray;
+            border-color: blue;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .Horizontal .home{
+            background-color:gray;
+            color: white;
+        }
+        .Horizontal li a:hover{
+            background-color: orange;
+            color:white
+        }
+    </style>
+    <title>Navigation bar</title>
+</head>
+<body>
+    <h1>Vertical Navigation bar</h1>
+    <div class="Vertical">
+        <ul>
+            <li><a href="#" class = "active">Home</a></li>
+            <li><a href = "#">Java</a></li>
+            <li><a href = "#">CSS</a></li>
+            <li><a href = "#">HTML</a></li>
+            <li><a href = "#">Bootstrap</a></li>
+        </ul>
+    </div>
+    <h2>Horizontal navigation bar</h2>
+    <div class="Horizontal">
+        <ul>
+            <li><a class="home" href="#home">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+</body>
+</html>

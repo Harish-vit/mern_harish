@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #Sidenav a {
+            position: absolute;
+            left: -80px;
+            transition: 0.3s;
+            padding: 20px;
+            width: 100px;
+            color: transparent;
+            border-radius: 0 5px 5px 0;
+        }
+        #Sidenav a:hover {
+            left: 0;
+            font-size: 22px;
+            color: white;
+        }
+        #box1 {
+            top: 30px;
+            background-color: green;
+        }
+        #box2 {
+            top: 100px;
+            background-color: dodgerblue;
+        }
+        #box3 {
+            top: 170px;
+            background-color: tomato;
+        }
+        #box4 {
+            top: 240px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Sidenav" class="sidenav">
+  <a href="#" id="box1">Html</a>
+  <a href="#" id="box2">CSS</a>
+  <a href="#" id="box3">Bootstrap</a>
+  <a href="#" id="box4">Java Script</a>
+</div>
+
+<div style="margin-left:80px;">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+   
+</body>
+</html> 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        th,td,table {
+            border-style: solid;  
+            border-width: 1px;
+            border-color: black;
+            border : 10;
+            border-radius: 20px;
+            background-color: lightblue;
+            box-sizing: 10;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px; 
+            width: 300px; 
+            margin: 0 auto; 
+        }
+        .box {
+            width: 100px;
+            height: 50px;
+            border: solid;
+            text-align:center;
+            border-radius: 4px; 
+            background-color: white;
+            font-size: 18px;
+            border-color:rgb(147, 215, 45); 
+        }
+        .box1 {
+            width: 100px;
+            height: 50px;
+            border: solid;
+            text-align:center;
+            border-radius: 8px; 
+            background-color: white;
+            font-size: 18px;
+            border-color:rgb(142, 211, 39); 
+        }
+        .box2 {
+            width: 100px;
+            height: 50px;
+            border: solid;
+            text-align:center;
+            border-radius: 20px; 
+            background-color: white;
+            font-size: 18px;
+            border-color:rgb(139, 208, 36); 
+        }
+        .box3 {
+            width: 100px;
+            height: 50px;
+            border: solid;
+            text-align:center;
+            border-radius: 50%; 
+            background-color: white;
+            font-size: 18px;
+            border-color:rgb(148, 220, 40); 
+        }
+        .box4 {
+            width: 100px;
+            height: 50px;
+            border: solid;
+            text-align:center;
+            border-top-left-radius: 5px; 
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 5px;
+            background-color: white;
+            font-size: 18px;
+            border-color:rgb(142, 212, 36); 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <table align="center">
+        <tr>
+            <th allign="center" width="200px" >Firstname</th>
+            <th allign="center" width="200px">Lastname</th>
+            <th allign="center" width="200px">Age</th>
+        </tr>
+
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <div class="grid-container">
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 17px;
+        }
+        form {
+            border: 3px solid white;
+        }
+        .inner{
+            padding:14px;
+            background-color: white;
+        }
+        .outer{
+            padding:16px;
+            background-color: lightgray;
+        }
+        input[type=text],input[type=password]{
+            text-align: left;
+            width: 25%;
+            padding: 10px 18px;
+            margin: 6px 0;
+            border: 1px thin black;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: rgb(12, 162, 137);
+            color: white;
+            padding: 12px 18px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 25%;
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.8;
+        }
+        button{
+            width: auto;
+            padding: 10px 18px;
+            border:0;
+            background-color: tomato;
+            color: white;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center" style="font-size: 20px;">Login Form</h1>
+    <form>
+        <div class="outer">         
+            <div class="inner">
+                <img src="./img.jpg" alt="Avatar" class="avatar"></br>
+                <label for="Username">Username</label></br>
+                <input type="text" name="Username" placeholder="Enter username"/></br>
+                <label for="password">Password</label></br>  
+                <input type="password" name="password" placeholder="Enter password"/></br>
+                <input type="submit" value="Login"/></br>
+                <label><input type="checkbox" checked="checked" name="remember"> Remember me</label></br>
+                </br>
+            </div>
+            <button type="button">Cancel</button>
+            <p>Forgot <a href="#">password?</a></p>
+        </div>
+    </form>
+</body>
+</html>

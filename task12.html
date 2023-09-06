@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(124, 21, 67, 0.955);
+        }
+        table{
+            background-color: rgb(78, 18, 53);
+            margin-top:75px;
+            color:white;
+            border:0;
+            padding: 12px 20px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            width: 100%;
+        }
+        tr:last-child{
+            border:none;
+            padding:20px;
+            text-align: center;
+            width:50%;
+        }
+    </style>
+    <title>forms</title>
+</head>
+<body>
+    <form>
+        <table align="center" cellspacing="20" cellpadding="2">
+            <tr>
+                <td>
+                    <label for="Name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="Name" placeholder="your name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="Email" placeholder="your email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+                <td>
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter password"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone Number">Phone Number:</label>
+                </td>
+                <td>
+                    <input type="number" name="Phone Number"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Enter gender:</p>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male"/>
+                    <label for="male">Male</label>                    
+                    <input type="radio" name="gender" id="female" value="female"/>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="Others" value="Others"/>
+                    <label for="Others">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Language">Language:</label>
+                </td>
+                <td>
+                    <select id="Language" name="Language">
+                        <option value="select language">select language</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Zip Code">Zip Code:</label>
+                </td>
+                <td>
+                    <input type="number" name="Zip Code"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="About">About:</label>
+                </td>
+                <td>
+                    <textarea id="subject" name="subject" placeholder="Write about yourself..." style="height:50px"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
